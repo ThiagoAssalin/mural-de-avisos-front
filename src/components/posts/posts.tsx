@@ -13,6 +13,15 @@ import { useEffect, useState } from "react";
             }
             loadPost()
     },[])
+
+
+    function handleDelete(id:number){
+        let postsFilter:any = posts?.filter((filtered)=>{
+            return(filtered.id !==id)
+        })
+        setPosts(postsFilter)
+    }
+
     return(
         <div id="card-post">
              {posts && <ul>
@@ -20,7 +29,8 @@ import { useEffect, useState } from "react";
                     return(
                         <div key={post.id} className=" bg-slate-600 w-1/4 rounded p-2">
                             <h3 className=" mb-2">{post.title}</h3>
-                            <p>{post.description}</p>
+                            <p className="mb-2">{post.description}</p>
+                            <button className=" border p-1" onClick={()=>{handleDelete(post.id)}}>Delete</button>
                         </div>
                     )
                 })}
