@@ -1,4 +1,5 @@
 import Header from "@/components/header/header";
+import Posts from "@/components/posts/posts";
 
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
       <Header/>
       <div className=" w-full p-3 " >
         <h2>Meu Mural</h2>
-        
+        <Posts/>
       </div>
     </main>
   )
