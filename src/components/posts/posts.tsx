@@ -12,13 +12,16 @@ import { useEffect, useState } from "react";
                 setPosts(JSON.parse(response.data))
             }
             loadPost()
+            
     },[])
+    
+    console.log(posts)
 
-
-    function handleDelete(id:number){
+    async function handleDelete(id:string){
         let postsFilter:any = posts?.filter((filtered)=>{
             return(filtered.id !==id)
         })
+        await api.delete(`/del/${id}`)
         setPosts(postsFilter)
     }
 

@@ -2,7 +2,7 @@
 interface Post{
     title: "string"
     description: "string"
-    id: number
+    id: "string"
 }
 
 export default Post
