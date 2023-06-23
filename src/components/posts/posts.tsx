@@ -18,8 +18,8 @@ import { useEffect, useState } from "react";
              {posts && <ul>
                 {posts.map((post)=>{
                     return(
-                        <div key={post.id} className="">
-                            <h3>{post.title}</h3>
+                        <div key={post.id} className=" bg-slate-600 w-1/4 rounded p-2">
+                            <h3 className=" mb-2">{post.title}</h3>
                             <p>{post.description}</p>
                         </div>
                     )
