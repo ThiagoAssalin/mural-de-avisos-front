@@ -1,4 +1,4 @@
-Projeto feito como desafio prorio para absorver uma REST API usandp ferramentas que são novas para mim, como por exemplo NextJS, TypeScript e Tailwind
+Projeto feito como desafio prório para absorver uma REST API usando ferramentas que são novas para mim, como por exemplo NextJS, TypeScript e Tailwind
 
 
 
